@@ -1,0 +1,13 @@
+{
+  "name": "propx-models",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "mongoose": "7.5.2",
+    "runtypes": "6.7.0"
+  },
+  "devDependencies": {
+    "@types/mongoose": "5.11.97"
+  }
+}

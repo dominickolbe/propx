@@ -1,0 +1,20 @@
+version: "3.8"
+
+services:
+  mongo:
+    container_name: propx-mongo
+    image: mongo:4.2
+    restart: unless-stopped
+    networks:
+      - propx-network
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - ${MONGO_PORT}:27017
+
+networks:
+  propx-network:
+    driver: bridge
+
+volumes:
+  mongo-data:

@@ -1,0 +1,32 @@
+{
+  "name": "propx",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dominic Kolbe",
+    "email": "kolbedominic@gmail.com",
+    "url": "https://dominickolbe.dk"
+  },
+  "repository": "git@github.com:dominickolbe/propx.git",
+  "homepage": "https://github.com/dominickolbe/propx#readme",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": [
+    "packages/propx-frontend",
+    "packages/propx-server",
+    "packages/propx-utils",
+    "packages/propx-models"
+  ],
+  "scripts": {
+    "frontend:start": "yarn workspace propx-frontend start",
+    "frontend:build": "yarn workspace propx-frontend build",
+    "server:dev": "REACT_APP_VERSION=$npm_package_version yarn workspace propx-server start:dev",
+    "server:start": "REACT_APP_VERSION=$npm_package_version yarn workspace propx-server start",
+    "prettier:check": "prettier --check packages/**/*",
+    "prettier:fix": "prettier --write packages/**/*",
+    "test": "yarn run prettier:check"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "3.0.3"
+  }
+}
