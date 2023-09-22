@@ -5,8 +5,7 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test"
+    "build": "react-scripts build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
